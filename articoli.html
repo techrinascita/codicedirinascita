@@ -9,35 +9,42 @@
     body {
       margin: 0;
       font-family: sans-serif;
+      background-color: #f4f4f4;
+      color: #111;
       line-height: 1.6;
-      background: #f4f4f4;
     }
     header {
-      background: black;
+      background-color: black;
       color: white;
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
     }
     main {
       max-width: 900px;
-      background: white;
       margin: 2rem auto;
-      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .box {
+      background-color: white;
+      padding: 1.5rem 2rem;
       border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    .highlight {
+      background-color: #e5f0ff;
     }
     h1 {
       font-size: 2rem;
-      margin-bottom: 1rem;
     }
     h2 {
-      font-size: 1.4rem;
-      margin-top: 1.5rem;
-    }
-    p {
-      margin-bottom: 1.2rem;
+      font-size: 1.3rem;
+      color: #2563eb;
+      margin-bottom: 0.5rem;
     }
     a {
-      color: #3b82f6;
+      color: #2563eb;
       text-decoration: none;
       font-weight: bold;
     }
@@ -48,12 +55,15 @@
     <h1>Articoli</h1>
   </header>
   <main>
-    <article>
+    <div class="box">
       <h2>Il Digitale come Via di Rinascita</h2>
       <p>La tecnologia non è solo uno strumento, ma può diventare un alleato per ricostruirsi, per riprendere fiato, per trovare una direzione in un momento difficile. In questo primo articolo voglio raccontarti come il mondo digitale mi ha aiutato a ripartire.</p>
       <a href="articolo1.html">Leggi tutto</a>
-    </article>
-    <p>Presto arriveranno altri contenuti... torna a trovarmi!</p>
+    </div>
+    <div class="box highlight">
+      <h2>Altri articoli in arrivo</h2>
+      <p>Presto arriveranno nuovi articoli che continueranno a esplorare il potenziale positivo della tecnologia. Rimani connesso!</p>
+    </div>
   </main>
 </body>
 </html>

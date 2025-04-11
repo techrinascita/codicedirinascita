@@ -9,35 +9,42 @@
     body {
       margin: 0;
       font-family: sans-serif;
+      background-color: #f4f4f4;
+      color: #111;
       line-height: 1.6;
-      background: #f4f4f4;
     }
     header {
-      background: black;
+      background-color: black;
       color: white;
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
     }
     main {
       max-width: 900px;
-      background: white;
       margin: 2rem auto;
-      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .box {
+      background-color: white;
+      padding: 1.5rem 2rem;
       border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    .highlight {
+      background-color: #e5f0ff;
     }
     h1 {
       font-size: 2rem;
-      margin-bottom: 1rem;
     }
     h2 {
-      font-size: 1.4rem;
-      margin-top: 1.5rem;
-    }
-    p {
-      margin-bottom: 1.2rem;
+      font-size: 1.3rem;
+      color: #2563eb;
+      margin-bottom: 0.5rem;
     }
     a {
-      color: #3b82f6;
+      color: #2563eb;
       text-decoration: none;
       font-weight: bold;
     }
@@ -48,9 +55,22 @@
     <h1>Chi Sono</h1>
   </header>
   <main>
-    <p>Mi chiamo Mada, ho 22 anni, vengo dalla Romania e sono un ragazzo con tante aspirazioni. Mi piace definirmi intraprendente, anche se la vita non sempre mi ha reso facile dimostrarlo. Dopo aver perso il lavoro, ho attraversato un periodo difficile in cui mi sono sentito spesso giudicato per la mia passione per il computer e la tecnologia.</p>
-    <p>Per me il computer non è solo uno strumento: è il mio spazio, il mio rifugio, il mio mondo fatto di calma, di curiosità e di innovazione.</p>
-    <p>Questo spazio è il riflesso di tutto ciò che credo: che la tecnologia, usata nel modo giusto, possa essere una fonte di libertà, speranza e ispirazione.</p>
+    <div class="box">
+      <h2>Chi è Mada</h2>
+      <p>Mi chiamo Mada. Ho 22 anni, vengo dalla Romania e sono un ragazzo con tante aspirazioni. Mi piace definirmi intraprendente, anche se la vita non sempre mi ha reso facile dimostrarlo. Dopo aver perso il lavoro, ho attraversato un periodo difficile in cui mi sono sentito spesso giudicato per la mia passione per il computer e la tecnologia.</p>
+    </div>
+    <div class="box highlight">
+      <h2>La Missione</h2>
+      <p>Questo non è un blog come gli altri. È nato dalla voglia di riscattarmi, di ritrovare uno spazio dove esprimermi e dare valore alla mia passione. Voglio condividere contenuti che possano aiutare anche te a sentirti meno solo e più ispirato.</p>
+    </div>
+    <div class="box">
+      <h2>Cosa Troverai Qui</h2>
+      <p>🔹 Recensioni di app, tool e software utili<br>🔹 Pensieri profondi su come la tecnologia può diventare una via di rinascita<br>🔹 Idee per riscoprire te stesso attraverso il digitale</p>
+    </div>
+    <div class="box">
+      <h2>Il Messaggio</h2>
+      <p>Vorrei che chi legge questo sito si sentisse accolto. Che sentisse di non essere sbagliato per amare il digitale, per passare del tempo al computer, per essere curioso. Questo è uno spazio dove possiamo essere chi siamo davvero.</p>
+    </div>
   </main>
 </body>
 </html>
