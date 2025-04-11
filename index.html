@@ -6,38 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Codice di Rinascita - Riparti con la tecnologia</title>
   <meta name="description" content="Codice di Rinascita è un progetto digitale creato da Mada per aiutarti a ritrovare calma, speranza e libertà usando la tecnologia in modo positivo.">
-  <meta name="keywords" content="tecnologia positiva, crescita personale, rinascita digitale, blog di ispirazione, Mada, strumenti digitali, benessere digitale">
-  <meta name="author" content="Mada">
   <link rel="stylesheet" href="style.css">
-  
-  <!-- Google tag (gtag.js) -->
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-637P73VY3B"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-637P73VY3B');
   </script>
 
-  <!-- AOS Library for scroll animations -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: sans-serif;
       line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 100vh;
     }
-
-    /* Hero Section */
     .hero {
       background: url('https://source.unsplash.com/1600x900/?technology,code') no-repeat center center/cover;
       height: 60vh;
@@ -48,14 +34,11 @@
       align-items: center;
       justify-content: center;
     }
-
     .overlay {
       background-color: rgba(0, 0, 0, 0.5);
       padding: 2rem;
       width: 100%;
     }
-
-    /* Top navigation */
     .top-nav {
       background: black;
       color: white;
@@ -65,68 +48,15 @@
       top: 0;
       z-index: 999;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
+      justify-content: center;
     }
-
     .top-nav a {
       color: white;
       margin: 0 1rem;
       text-decoration: none;
     }
-
-    .hamburger {
-      display: none;
-      cursor: pointer;
-      font-size: 1.5rem;
-      color: white;
-    }
-
-    .menu {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-
-    /* Hamburger Menu for Mobile */
-    @media (max-width: 768px) {
-      .hamburger {
-        display: block;
-      }
-
-      .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: black;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        z-index: 999;
-        align-items: center;
-      }
-
-      .menu a {
-        padding: 1rem;
-        text-align: center;
-      }
-
-      .menu.open {
-        display: flex;
-      }
-    }
-
-    /* Sections */
-    .section {
-      padding: 2rem 10%;
-    }
-
-    .cta {
-      text-align: center;
-      margin-top: 2rem;
-    }
-
+    .section { padding: 2rem 10%; }
+    .cta { text-align: center; margin-top: 2rem; }
     .button {
       background: #3b82f6;
       color: white;
@@ -136,86 +66,47 @@
       text-decoration: none;
       font-weight: bold;
     }
-
-    .pulse {
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-
-    /* Footer */
     footer {
       background: #111;
       color: white;
       text-align: center;
       padding: 1rem;
     }
-
-    /* Responsive Styles */
     @media (max-width: 768px) {
-      .section {
-        padding: 2rem 5%;
-      }
-
-      .top-nav a {
-        display: block;
-        margin: 0.5rem 0;
-      }
-
-      .hero {
-        height: 40vh;
-      }
-
-      .overlay {
-        padding: 1rem;
-      }
-
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      h2 {
-        font-size: 1.2rem;
-      }
+      .section { padding: 2rem 5%; }
+      .hero { height: 40vh; }
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.2rem; }
+      .top-nav { flex-direction: column; }
+      .top-nav a { margin: 0.5rem 0; }
     }
   </style>
 </head>
 <body>
   <header class="hero">
     <div class="overlay">
-      <h1 class="fade-in">Codice di Rinascita</h1>
-      <p class="fade-in delay">Innovazione per ripartire. Calma per respirare. Speranza per ricostruire.</p>
+      <h1>Codice di Rinascita</h1>
+      <p>Innovazione per ripartire. Calma per respirare. Speranza per ricostruire.</p>
     </div>
   </header>
-
-  <nav class="top-nav fade-in delay-2">
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div class="menu">
-      <a href="chisono.html">Chi Sono</a>
-      <a href="articoli.html">Articoli</a>
-      <a href="#missione">Missione</a>
-      <a href="#contenuti">Contenuti</a>
-      <a href="#messaggio">Messaggio</a>
-      <a href="#inizia">Inizia</a>
-    </div>
+  <nav class="top-nav">
+    <a href="chisono.html">Chi Sono</a>
+    <a href="articoli.html">Articoli</a>
+    <a href="#missione">Missione</a>
+    <a href="#contenuti">Contenuti</a>
+    <a href="#messaggio">Messaggio</a>
+    <a href="#inizia">Inizia</a>
   </nav>
-
   <main>
-    <section id="mada" class="section fade-in" data-aos="fade-up">
+    <section id="mada" class="section">
       <h2>Chi è Mada</h2>
       <p>Mi chiamo Mada. Ho 22 anni, vengo dalla Romania e sono un ragazzo con tante aspirazioni...</p>
     </section>
-
-    <section id="missione" class="section fade-in" data-aos="fade-up">
+    <section id="missione" class="section">
       <h2>La Missione</h2>
       <p>Questo non è un blog come gli altri...</p>
     </section>
-
-    <section id="contenuti" class="section fade-in" data-aos="fade-up">
+    <section id="contenuti" class="section">
       <h2>Cosa Troverai Qui</h2>
       <ul>
         <li>🛠️ Recensioni di app, tool e software utili</li>
@@ -224,26 +115,14 @@
         <li>🌱 Idee per vivere meglio con l'aiuto del digitale</li>
       </ul>
     </section>
-
-    <section id="inizia" class="section fade-in cta" data-aos="fade-up">
+    <section id="inizia" class="section cta">
       <h2>Inizia il Tuo Percorso</h2>
       <p>Resta connesso. Presto arriveranno nuovi contenuti...</p>
-      <a href="articoli.html" class="button pulse">Scopri gli articoli</a>
+      <a href="articoli.html" class="button">Scopri gli articoli</a>
     </section>
   </main>
-
   <footer>
     <p>&copy; 2025 Codice di Rinascita | Creato da Mada</p>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-
-    function toggleMenu() {
-      const menu = document.querySelector(".menu");
-      menu.classList.toggle("open");
-    }
-  </script>
 </body>
 </html>
