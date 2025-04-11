@@ -9,6 +9,8 @@
   <meta name="keywords" content="tecnologia positiva, crescita personale, rinascita digitale, blog di ispirazione, Mada, strumenti digitali, benessere digitale">
   <meta name="author" content="Mada">
   <link rel="stylesheet" href="style.css">
+  <!-- AOS Library for scroll animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
@@ -20,6 +22,7 @@
       line-height: 1.6;
     }
 
+    /* Hero Section */
     .hero {
       background: url('https://source.unsplash.com/1600x900/?technology,code') no-repeat center center/cover;
       height: 60vh;
@@ -37,6 +40,7 @@
       width: 100%;
     }
 
+    /* Top navigation */
     .top-nav {
       background: black;
       color: white;
@@ -45,6 +49,9 @@
       position: sticky;
       top: 0;
       z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .top-nav a {
@@ -53,17 +60,46 @@
       text-decoration: none;
     }
 
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    .menu {
+      display: flex;
+    }
+
+    /* Hamburger Menu for Mobile */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: black;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 999;
+      }
+
+      .menu a {
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .menu.open {
+        display: flex;
+      }
+    }
+
+    /* Sections */
     .section {
       padding: 2rem 10%;
-    }
-
-    .section ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .section ul li {
-      margin: 0.5rem 0;
     }
 
     .cta {
@@ -91,6 +127,7 @@
       100% { transform: scale(1); }
     }
 
+    /* Footer */
     footer {
       background: #111;
       color: white;
@@ -98,7 +135,7 @@
       padding: 1rem;
     }
 
-    /* Responsive adjustments */
+    /* Responsive Styles */
     @media (max-width: 768px) {
       .section {
         padding: 2rem 5%;
@@ -111,7 +148,6 @@
 
       .hero {
         height: 40vh;
-        font-size: 1rem;
       }
 
       .overlay {
@@ -137,27 +173,29 @@
   </header>
 
   <nav class="top-nav fade-in delay-2">
-    <a href="chisono.html">Chi Sono</a>
-    <a href="articoli.html">Articoli</a>
-    <a href="#missione">Missione</a>
-    <a href="#contenuti">Contenuti</a>
-    <a href="#messaggio">Messaggio</a>
-    <a href="#inizia">Inizia</a>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="menu">
+      <a href="chisono.html">Chi Sono</a>
+      <a href="articoli.html">Articoli</a>
+      <a href="#missione">Missione</a>
+      <a href="#contenuti">Contenuti</a>
+      <a href="#messaggio">Messaggio</a>
+      <a href="#inizia">Inizia</a>
+    </div>
   </nav>
 
   <main>
-    <section id="mada" class="section fade-in">
+    <section id="mada" class="section fade-in" data-aos="fade-up">
       <h2>Chi è Mada</h2>
-      <p>Mi chiamo Mada. Ho 22 anni, vengo dalla Romania e sono un ragazzo con tante aspirazioni. Mi piace definirmi intraprendente, anche se la vita non sempre mi ha reso facile dimostrarlo. Dopo aver perso il lavoro, ho attraversato un periodo difficile in cui mi sono sentito spesso giudicato per la mia passione per il computer e la tecnologia.</p>
-      <p>Per me il computer non è solo uno strumento: è il mio spazio, il mio rifugio, il mio mondo fatto di calma, di curiosità e di innovazione.</p>
+      <p>Mi chiamo Mada. Ho 22 anni, vengo dalla Romania e sono un ragazzo con tante aspirazioni...</p>
     </section>
 
-    <section id="missione" class="section fade-in">
+    <section id="missione" class="section fade-in" data-aos="fade-up">
       <h2>La Missione</h2>
-      <p>Questo non è un blog come gli altri. Qui parliamo di strumenti digitali non solo per lavorare meglio, ma per vivere meglio. Ogni app, ogni guida, ogni riflessione ha un solo scopo: aiutarti a riprendere il controllo e a costruire un nuovo equilibrio.</p>
+      <p>Questo non è un blog come gli altri...</p>
     </section>
 
-    <section id="contenuti" class="section fade-in">
+    <section id="contenuti" class="section fade-in" data-aos="fade-up">
       <h2>Cosa Troverai Qui</h2>
       <ul>
         <li>🛠️ Recensioni di app, tool e software utili</li>
@@ -167,14 +205,9 @@
       </ul>
     </section>
 
-    <section id="messaggio" class="section fade-in">
-      <h2>Un Messaggio per Te</h2>
-      <p>Se ti senti perso, disconnesso o bloccato... sappi che non sei solo. La tecnologia può sembrare fredda, ma può diventare un alleato potente se la usiamo con intenzione.</p>
-    </section>
-
-    <section id="inizia" class="section fade-in cta">
+    <section id="inizia" class="section fade-in cta" data-aos="fade-up">
       <h2>Inizia il Tuo Percorso</h2>
-      <p>Resta connesso. Presto arriveranno nuovi contenuti, strumenti e ispirazioni. E se qualcosa di questo spazio ti parla, torna. Qui sei il benvenuto.</p>
+      <p>Resta connesso. Presto arriveranno nuovi contenuti...</p>
       <a href="articoli.html" class="button pulse">Scopri gli articoli</a>
     </section>
   </main>
@@ -182,5 +215,15 @@
   <footer>
     <p>&copy; 2025 Codice di Rinascita | Creato da Mada</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleMenu() {
+      const menu = document.querySelector(".menu");
+      menu.classList.toggle("open");
+    }
+  </script>
 </body>
 </html>
