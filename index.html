@@ -10,11 +10,25 @@
       background: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?fit=crop&w=1400&q=80') center/cover no-repeat;
       color: white;
       text-align: center;
-      padding: 6rem 1rem;
+      padding: 8rem 1rem;
     }}
     .hero h1 {{
-      font-size: 2.5rem;
+      font-size: 3rem;
       text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      margin: 0;
+    }}
+    .button {{
+      background-color: #2563eb;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }}
+    .button:hover {{
+      background-color: #1d4ed8;
     }}
   </style>
 </head>
@@ -38,14 +52,18 @@
     </div>
     <div class="box">
       <h2>Cosa Troverai Qui</h2>
-      <p>🔹 Recensioni di app, tool e software utili<br>🔹 Pensieri profondi su come la tecnologia può diventare una via di rinascita<br>🔹 Idee per riscoprire te stesso attraverso il digitale</p>
+      <ul>
+        <li>🔹 Recensioni di app, tool e software utili</li>
+        <li>🔹 Pensieri profondi su come la tecnologia può diventare una via di rinascita</li>
+        <li>🔹 Idee per riscoprire te stesso attraverso il digitale</li>
+      </ul>
     </div>
     <div class="box">
       <h2>Il Messaggio</h2>
       <p>Vorrei che chi legge questo sito si sentisse accolto. Che sentisse di non essere sbagliato per amare il digitale, per passare del tempo al computer, per essere curioso. Questo è uno spazio dove possiamo essere chi siamo davvero.</p>
     </div>
-    <div class="box">
-      <a href="articoli.html"><strong>Scopri gli articoli</strong></a>
+    <div class="box" style="text-align: center;">
+      <a href="articoli.html" class="button">Scopri gli articoli</a>
     </div>
   </main>
 </body>
