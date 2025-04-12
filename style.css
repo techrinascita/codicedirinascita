@@ -1,4 +1,5 @@
 
+/* Impostazioni generali */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -6,12 +7,7 @@ body {
   color: #111;
   line-height: 1.6;
 }
-header {
-  background-color: #2563eb;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-}
+
 main {
   max-width: 900px;
   margin: 2rem auto;
@@ -19,25 +15,63 @@ main {
   flex-direction: column;
   gap: 1.5rem;
 }
+
+/* Box contenuti */
 .box {
   background-color: white;
   padding: 1.5rem 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+
 .highlight {
   background-color: #e5f0ff;
 }
+
+/* Header */
+header {
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Titoli */
 h1 {
   font-size: 2rem;
+  margin: 0;
 }
+
 h2 {
   font-size: 1.3rem;
   color: #2563eb;
   margin-bottom: 0.5rem;
 }
+
+/* Link */
 a {
   color: #2563eb;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* MENU STICKY */
+nav {
+  background-color: #2563eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
