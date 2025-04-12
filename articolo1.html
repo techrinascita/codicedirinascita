@@ -21,6 +21,21 @@
       <p>Questo primo articolo vuole essere un abbraccio a chi, come me, ha trovato una luce tra le righe di codice o dentro una tastiera. Perché se c'è una cosa che il mondo tech mi ha insegnato è che ogni crisi è un'opportunità per reinventarsi.</p>
       <p><strong>Non mollare. Il tuo momento può arrivare in qualsiasi istante.</strong></p>
     </div>
+    <div class="box">
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+        this.page.url = window.location.href;
+        this.page.identifier = "articolo1";
+        };
+        (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://codicedirinascita.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    </div>
   </main>
 </body>
 </html>
